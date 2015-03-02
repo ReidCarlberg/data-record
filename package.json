@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/ReidCarlberg/data-record",
   "dependencies": {
-    "i2c": "^0.1.8"
+    "i2c": "^0.1.8",
+    "request": "^2.53.0"
   }
 }

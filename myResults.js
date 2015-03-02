@@ -1,6 +1,28 @@
 /*
 	Reid Carlberg
 	March 1, 2015
+	the data-host requests a certain format.
+
+{ D001: 
+   { rangeStartDate: 'Mon, 02 Mar 2015 11:20:20 GMT',
+     deviceName: 'D001',
+     brightness: 0,
+     maxBrightness: 0,
+     minBrightness: 0,
+     temperature: 13.88,
+     maxTemperature: 13.88,
+     minTemperature: 13.81,
+     rangeEndDate: 'Mon, 02 Mar 2015 11:20:34 GMT' },
+  D002: 
+   { rangeStartDate: 'Mon, 02 Mar 2015 11:20:20 GMT',
+     deviceName: 'D002',
+     brightness: 0,
+     maxBrightness: 0,
+     minBrightness: 0,
+     temperature: 14.5,
+     maxTemperature: 14.5,
+     minTemperature: 14.44,
+     rangeEndDate: 'Mon, 02 Mar 2015 11:20:34 GMT' } }
 */
 
 var Results = function() {

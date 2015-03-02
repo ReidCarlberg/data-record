@@ -4,7 +4,7 @@ var i2c = require('i2c'),
 
 var address = 0x18;
 
-var sampleSize = 60; // number of samples to take before sending to host
+var sampleSize = 30; // number of samples to take before sending to host
 var currentSampleCount = 0;
 var samplePeriod = 10000; // milliseconds between polling for samples
 

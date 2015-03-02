@@ -15,6 +15,7 @@ var Results = function() {
 		if (!this.data[readings[0]]) {
 			console.log(readings[0] + " not found");
 			this.data[readings[0]] = {};
+			this.data[readings[0]].rangeStartDate = new Date().toUTCString();
 			this.data[readings[0]].brightness = readings[1];
 			this.data[readings[0]].maxBrightness = readings[1];
 			this.data[readings[0]].minBrightness = readings[1];
@@ -24,6 +25,7 @@ var Results = function() {
 		} else {
 			console.log(readings[0] + " found!");
 			var currentResult = this.data[readings[0]];
+			currentResult.rangeEndDate = new Date().toUTCString();
 			currentResult.brightness = readings[1];
 			if ( readings[1] < currentResult.minBrightness ) {
 				currentResult.minBrightness = readings[1];

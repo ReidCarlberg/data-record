@@ -1,5 +1,5 @@
 var i2c = require('i2c'),
-	MyResults = require('./MyResults');
+	MyResults = require('./myResults.js');
 
 var address = 0x18;
 

@@ -16,6 +16,7 @@ var Results = function() {
 			console.log(readings[0] + " not found");
 			this.data[readings[0]] = {};
 			this.data[readings[0]].rangeStartDate = new Date().toUTCString();
+			this.data[readings[0]].deviceName = readings[0];
 			this.data[readings[0]].brightness = readings[1];
 			this.data[readings[0]].maxBrightness = readings[1];
 			this.data[readings[0]].minBrightness = readings[1];
